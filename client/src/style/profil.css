@@ -1,0 +1,74 @@
+.profil{
+	width: 100%;
+	height: 100%;
+	padding-left: 15%;
+}
+
+.contenu{
+	padding-top: 20%;
+	display: flex;
+	flex-direction: column;
+}
+
+
+.profil h1{
+	margin: 0 20px;
+	font-size: 4em;
+	margin-bottom: 0;
+}
+
+a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.profil h2{
+	margin-left: 20px;
+}
+
+.modif{
+	width: 300px;
+	margin-top: 200px;
+	font-size: 35px;
+	position: relative;
+  	text-decoration: none;
+}
+
+.modif:hover{
+	cursor: pointer;
+}
+
+.modif::before {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 290px;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #fff;
+	transform: scaleX(1);
+	transition: transform 0.3s ease;
+}
+
+.modif:hover::before {
+  	transform: scaleX(0);
+}
+
+
+@media (min-width: 1250px) { 
+	.contenu {padding-top: 15%;}
+}
+
+@media (max-width: 550px){
+	.profil{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		padding-left: 0;
+	}
+
+	a{
+		font-size: 20px;
+	}
+}

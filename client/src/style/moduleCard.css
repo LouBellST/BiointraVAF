@@ -1,0 +1,12 @@
+.moduleCard{
+	margin: 20px 20px;
+}
+
+@media(min-width: 1250px){
+	.modulesModuleCard{
+		color: #fff;	}
+}
+
+.moduleCard:hover{
+	cursor: pointer;
+}

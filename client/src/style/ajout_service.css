@@ -1,0 +1,40 @@
+.formulaire{
+	width: 40%;
+	height: 100%;
+	margin: 0 auto;
+    padding-bottom: 100px;
+	color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.h1FormService{
+    padding-top: 30%;
+}
+
+.formulaire input{
+    width: 100%;
+    padding: 15px 15px;
+    border-radius: 3px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px #333;
+}
+
+@media(max-width: 1100px){
+    .container{
+        padding-top: 0%;
+    }
+}
+
+@media(min-width: 1250px){
+    .formulaire{
+        width: 60%;
+    }
+
+
+}
+
+

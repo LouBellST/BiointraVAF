@@ -1,0 +1,173 @@
+.accueil{
+	width: 100%;
+	height: 100%;
+	padding-left: 0%;
+}
+
+.card{
+	position: absolute;
+	top: 250px;
+	right: 50px;
+}
+
+a{
+	text-decoration: none;
+}
+
+.bienvenue{
+	padding-top: 4%;
+	font-size: 45px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.favorisTitle{
+	margin-left: 20px;
+	font-size: 35px;
+}
+
+
+.elementsAccueil{
+	width: 100%;
+	padding-bottom: 20px;
+}
+
+.listeModulesAccueil{
+	width: 50%;
+	margin: 0px 0;
+	display: flex;
+	flex-direction: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.favLink{
+	position: relative;
+}
+
+.deleteFav{
+	width: 30px;
+	height: 30px;
+	font-size: 30px;
+	border-radius: 10px;
+	border: none;
+	text-align: center;
+	background-color: #fff0;
+}
+
+.deleteFav:hover{
+	cursor: pointer;
+}
+
+.deleteFav img{
+	width: 20px;
+	height: 20px;
+}
+
+.editInfo{
+	width: 35px;
+	height: 35px;
+	font-size: 30px;
+	border-radius: 10px;
+	border: none;
+	text-align: center;
+	background-color: #fff0;
+	z-index: 1000;
+}
+
+.editInfo:hover{
+	cursor: pointer;
+}
+
+.editInfo img{
+	width: 20px;
+	height: 20px;
+}
+
+.inputInfo{
+	width: 100%;
+	padding: 10px 10px;
+	border: none;
+	border-radius: 3px;
+}
+
+
+.modifier {
+	position: absolute;
+	right: -300px;
+}
+
+.modifier::before {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #fff;
+	transform: scaleX(1);
+	transition: transform 0.3s ease;
+}
+
+.modifier:hover::before {
+  	transform: scaleX(0);
+}
+
+
+@media (min-width: 1051px) { 
+	.bienvenue{
+		padding-top: 16%;
+		text-align: left;
+		margin-bottom: 20px;
+	}
+	.accueil{
+		padding-left: 6%;
+	}
+	.card{
+		right: 0px;
+	}
+}
+
+
+@media (min-width: 1250px) { 
+	.bienvenue{
+		padding-top: 14%;
+		margin-bottom: 30px;
+	}
+	.accueil{
+		padding-left: 10%;
+	}
+	.card{
+		right: 50px;
+	}
+}
+
+
+@media(max-width: 1050px){
+	.card{
+		position: inherit;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		padding-top: 15%;
+	}
+
+	.accueil{
+		padding-left: 0;
+	}
+
+	.listeModulesAccueil{
+		width: 100%;
+	}
+}
+
+@media(max-height: 570px){
+	.card{
+		top: 150px;
+	}
+}
+
